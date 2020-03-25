@@ -6,7 +6,7 @@ const savecontents = document.querySelector("#savecontents");
 const deleteAll = document.querySelector("#delete");
 const createDateBlock = (date) => {
 
-currentDate.innerText = date.format("dddd Do MMMM");
+currentDate.innerText = date.format("dddd Do MMM YYYY");
 var dateData = document.createElement("div");
 dateData.classList.add("planner-container");
 
@@ -18,8 +18,7 @@ storedData = JSON.parse(storedData);
  if (!storedData) { storedData = {} };
 
 for (let i = 0; i <= 23; i++) {
-
-//creating dynamic elements (not in html) have to style etc. in javascript
+//creating dynamic elements (not in index.html) (styled in javascript)
 let dynamicDate = date.hour(i);
 
  //creating row div
@@ -129,7 +128,7 @@ nextBtn.addEventListener("click", (e) => {
 });
 savecontents.addEventListener("click", function(e) {
     //How can I get all of the entries to save at once?
-    $(".hour-container .row").each(function() {
+    $("#hourcontainer .row").each(function() {
         $(".hourSave", this).click();
     });
 
