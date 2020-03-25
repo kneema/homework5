@@ -17,9 +17,9 @@ storedData = JSON.parse(storedData);
 //If in local storage check hours
  if (!storedData) { storedData = {} };
 
-for (let i = 0; i <= 23; i++) {
-//creating dynamic elements (not in index.html) (styled in javascript)
-let dynamicDate = date.hour(i);
+for (let i = 0; i <= 12; i++) {
+//creating dynamic elements to create rows for each hour (starting at 7am)
+let dynamicDate = date.hour(i+7);
 
  //creating row div
 let hourRow = document.createElement("div");
