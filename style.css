@@ -1,0 +1,88 @@
+#headerblock{
+    font-weight: 300;
+    color: #23137a;
+    text-align: center;
+    padding: 20px;
+
+}
+#headerplanner{
+    font-size: 30px;
+    color: black;
+
+}
+#applicationdescription{
+    font-size: 10px;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+}
+#cardbody{
+    border-color: white;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+#currentDay{
+    font-size: 10px;
+    font-weight: 600;
+}
+#savecontents{
+    font-size: 7px;
+}
+#delete{
+    font-size: 7px;
+}
+#btn-prev{
+    font-size: 10px;
+}
+#btn-next{
+    font-size: 10px;
+
+}
+body {
+    font-size: 10px;
+    line-height: 1;
+  }
+  
+  .entry{
+    white-space: pre-wrap;
+  }
+  
+  .hour-container-container {
+    position: relative;
+  }
+  
+  .hour-container{
+    position: absolute;
+    width: 100%;
+    border-radius: 10px solid;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 50px;
+    border-top: 1px solid white;;
+  }
+  
+  .hour{
+    background-color: white;
+    color: #000000;
+    border-top: 1px solid #000000;
+  }
+  
+  .past{
+    background-color:gray;
+    color: rgb(20, 20, 20);
+  }
+  
+  .present{
+    background-color: #b36965;
+    color: rgb(20, 20, 20);
+  }
+  
+  .future{
+    background-color: #9dc99d;
+    color: rgb(20, 20, 20);
+  }
